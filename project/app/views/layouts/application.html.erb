@@ -19,13 +19,13 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </a>
-        <a class="brand" href="#">Home</a>
+        <a class="brand" href="/">Accueil</a>
         <div class="nav-collapse">
           <ul class="nav">
-            <li><%= link_to "Browse Products", products_path %></li>
-            <li><%= link_to "Browse Categories", categories_path  %></li>
-            <li><%= link_to "Contact Us" %></li>
-            <li><%= link_to "Cart" %></li>
+            <li><%= link_to "Produits", products_path %></li>
+            <li><%= link_to "Categories", categories_path  %></li>
+            <li><%= link_to "Mon espace perso" %></li>
+            <li><%= link_to "Panier" %></li>
           </ul>
         </div>
       </div>
@@ -36,8 +36,15 @@
     <div class="row">
       <div class="span9"><%= yield %></div>
       <div class="span3">
-        <h2>About Us</h2>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <h2>Services & garanties</h2>
+        <ul class="nav nav-tabs nav-stacked">
+        	<li><i class="icon-ok-sign"></i>Paiement en 3X : Payez vos commandes en 3 fois. Ce service, réservé aux particuliers, vous est proposé pour le paiement de vos commandes à partir de seulement 100 € d'achat (jusqu'à 3 000 €).</li>
+        	<br>
+        	<li><i class="icon-ok-sign"></i>Retrait et retour matériel SAV en agence : Commander sur notre site, c'est aussi la possibilité de retirer vos commandes dans notre réseau d'agences et de profiter d'un service après-vente de spécialistes du high-tech.</li>
+        	<br>
+        	<li><i class="icon-ok-sign"></i>Livraison en France et Belgique : Commandez le meilleur du High-Tech sur notre site et vous serez livrés dans les meilleurs délais en France Métropolitaine, dans les départements et territoires d'Outre Mer ou en Belgique.</li>
+        	<br>
+        	<li><i class="icon-ok-sign"></i>Économie rime avec écologie : notre site s'engage dans la protection de l'environnement avec l'utilisation d'emballages recyclables (mêlant carton et papier kraft) et robustes pour la sécurité de vos produits.</li>
       </div>
     </div>
   </div>

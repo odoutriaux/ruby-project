@@ -7,9 +7,21 @@
 .entry{
 	background-color: #fff;
 	border: 1px solid #ddd;
-	float: left;
 	width: 200px;
 	height: 200px;
 	padding: 10px;
 	margin: 10px;
 }
+
+.entry{
+	background-color: #fff;
+	border-bottom: 1px solid #ddd;
+	float: left;	
+	padding: 10px;
+	margin: 10px;
+}
+
+.clear{
+	clear: both;
+}
+

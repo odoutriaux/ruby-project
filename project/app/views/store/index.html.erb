@@ -4,15 +4,23 @@
 
 <h1>Votre catalogue</h1>
 <div id='catalogue'>
-	<% @products.each do |product| %>
-		<div class="entry">
-			<%= image_tag(product.image_url) %>
-			<h3><%= product.title %></h3>
-			<%=sanitize product.description %>
-			<div class="price_line">
-				<span class="price" ><%= number_to_currency(product.price) %></span>
-			</div>
-			<%= button_to 'Ajouter au panier', line_items_path(:product_id => product) %>
-		</div>
+	<% @categories.each do |category| %>
+		<div class='category'>
+		<h3><%= category.title %></h3>
+		<% @products.each do |product| %>
+			<% if product.category_id == category.id %>
+				<div class="entry">
+					<%= image_tag(product.image_url) %>
+					<h3><%= product.title %></h3>
+					<%=sanitize product.description %>
+					<div class="price_line">
+						<span class="price" ><%= number_to_currency(product.price) %></span>
+					</div>
+					<%= button_to 'Ajouter au panier', line_items_path(:product_id => product) %>
+				</div>
+			<% end %>
+		<% end %>
+	</div>
+	<div class='clear'></div>
 	<% end %>
 </div>
